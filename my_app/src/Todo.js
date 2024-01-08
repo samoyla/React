@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css"
 
 const Todo = () =>{
     const [tasks, setTasks] = useState([]);
@@ -18,7 +19,7 @@ const Todo = () =>{
     };
 
     return (
-        <div>
+        <div className="container">
             <h2>To-Do List</h2>
             <ul>
                 {tasks.map((singleTask, index) =>(
